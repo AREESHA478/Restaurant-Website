@@ -1,0 +1,88 @@
+.wrapper {
+    margin: 10px;
+}
+
+.search-container {
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#search-bar {
+    width: 230px; /* Adjusted width of the search bar */
+    margin-right: 10px; /* Space between search bar and button */
+    font-size: 16px;
+}
+/* .btn {
+    background-color: rgba(255, 3, 30);
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, width 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(255, 3, 91);
+    color: white;
+} */
+
+.emoji-suggestions {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px); /* Position below search bar with some spacing */
+    left: 0;
+  
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1100;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.emoji-suggestions div {
+    margin-bottom: 10px; /* Space between lines of emojis */
+}
+
+.emoji-suggestions span {
+    font-size: 24px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s; /* Add background-color transition */
+}
+
+.emoji-suggestions span:hover {
+    transform: scale(1.2);
+    background-color: #f0f0f0; /* Light background color on hover for better visibility */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #333; /* Dark background for visibility */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Add some padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More noticeable shadow */
+    display: flex;
+    justify-content: space-between; /* Align title and icon-cart */
+    align-items: center;
+}
+
+.title h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 3, 91);
+    margin: 0;
+}
+
+.icon-cart {
+    display: flex;
+    align-items: center;
+}
+
+.icon-cart i {
+    font-size: 24px; /* Adjust icon size */
+    margin-right: 8px; /* Space between icon and count */
+}

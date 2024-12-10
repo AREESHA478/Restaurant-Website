@@ -1,0 +1,17 @@
+
+/* Reservation Form */
+
+
+.booking{
+    background-image: url(images/RESERVATION2.jpg);
+    background-position: center;
+} 
+
+.form_group{
+    color: black;
+    margin: 37px;
+    font-size: 17px;
+    font-weight: 500;   
+}
+
+

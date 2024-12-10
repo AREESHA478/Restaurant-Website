@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="style3.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Philosopher:wght@700&family=Rethink+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link type="text/css" rel="stylesheet" href="css/lightgallery.css" /> 
+
+  <title>THE ELEGANTS EATS</title>
+  <style>
+    /* Navbar Styles */
+    nav {
+        padding: 10px 20px;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        color: #fff;
+        background-color: white; /* Change to desired navbar background color */
+    }
+
+    nav a {
+        color: rgba(255, 3, 53);
+        text-decoration: none;
+        margin: 0 15px;
+        /* font-size: 20px !important; */
+    }
+
+    nav a:hover {
+        color: rgba(255, 3, 53) !important;
+        border-radius: 50px;
+        padding: 5px 10px;
+    }
+
+    /* Dropdown Menu Styles
+    .dropdown-menu {
+        background-color: rgba(255, 3, 53, 0.766);
+        border: none;
+    }
+
+    .dropdown-menu a {
+        color: #fff;
+        padding: 10px 20px;
+        display: block;
+    }
+
+    .dropdown-menu a:hover {
+        color: #fff !important;
+        background-color: rgba(255, 3, 53, 0.49);
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    } */
+
+    /* Button in Navbar */
+    .butn {
+        background-color: rgba(255, 3, 53);
+        color: #fff;
+        width: 150px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        transition: width 0.3s ease;
+    }
+
+    .butn:hover {
+        background-color: rgb(255, 3, 53);
+        width: 180px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .navbar-toggler {
+            margin-top: 10px;
+        }
+
+        .navbar-collapse {
+            width: 100%;
+        }
+
+        .navbar-nav {
+            text-align: center;
+        }
+
+        .nav-item {
+            margin: 10px 0;
+        }
+/* 
+        .dropdown-menu {
+            position: static;
+            box-shadow: none;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            position: static;
+        } */
+    }
+</style>
+</head>
+<body >
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.gif" alt="" style="width: 200px; height: 63px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active me-2 mx-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu Map
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="burgers.html">Deals</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#fastfood">Fast Food</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#burger">Burger</a></li>
+                                <li><a class="dropdown-item" href="#">Sandwiches</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Pasta</a></li>
+                        <li><a class="dropdown-item" href="#">Chinese Food</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Beverages & Drinks</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Shakes</a></li>
+                                <li><a class="dropdown-item" href="#">Soft Drinks</a></li>
+                                <li><a class="dropdown-item" href="#">Juices</a></li>
+                                <li><a class="dropdown-item" href="#">Cocktail</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Dessert</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Cakes</a></li>
+                                <li><a class="dropdown-item" href="#">Brownies</a></li>
+                                <li><a class="dropdown-item" href="#">Ice Cream</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li> -->
+
+              <li class="nav-item">
+                <a class="nav-link active" href="burgers.html">Menu Map</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="reservation.html">Reservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact us.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about us.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" id="search-bar" placeholder="Search..." oninput="search()">
+            <button class="btn bg-danger" type="submit">Search</button>
+        </form> -->
+    </div>
+    <div class="wrapper">
+        <div class="search-container">
+            <input type="text" class="form-control"  id="search-bar" placeholder="Search..." onfocus="showEmojiSuggestions()" onblur="hideEmojiSuggestions()" oninput="search()">  <button class="btn bg-danger text-white" type="submit">Search</button>
+            <div id="emoji-suggestions" class="emoji-suggestions">
+                <div>
+                    <span onclick="addEmoji('😊')">😊</span>
+                    <span onclick="addEmoji('😷')">😷</span>
+                    <span onclick="addEmoji('😢')">😢</span>
+                </div>
+                <div>
+                    <span onclick="addEmoji('😠')">😠</span>
+                    <span onclick="addEmoji('💖')">🎂</span>
+                </div>
+            </div>
+          
+           </div>
+</nav>
+  
+    <div class="slideshow-container">
+
+      <div class="mySlides ">
+        <img src="images/bg1.jpeg" class="img-fluid mt-2 " style="width:100%; height: 100vh; ">
+        <div class="textbox">
+          <h1 class="text-danger  ">YOUR EVERY DAY PLACE</h1>
+          <p>
+              A celebration of cultural diversity and natural environment. ELEGANT EATS RESTAURANT showcases ingredient-led, contemporary cuisine that demonstrates the highly skilled techniques and relentless drive for perfection that has become our chef's trademark.
+          </p>
+        </div>
+      </div>
+      
+      <div class="mySlides ">
+        
+        <img src="images/bg2.webp" class="img-fluid h-100" style="width:100%">
+        <div class="textbox">
+          <h1 class="text-danger ">MEET EAT & ENJOY <br> THE TRUE TASTE</h1>
+          <p>
+              Offering a tasting menu allows us to bring together everything that we have developed into a purposefully designed experience. The menu is inspired by the ingredients that we grow  in and around old time.
+          </p></div>
+      </div>
+      
+      <div class="mySlides">
+        
+        <img src="images/bg3.jpeg" class="img-fluid h-100" style="width:100%; ">
+        <div class="textbox"> 
+          <h1 class="text-danger ">THE TASTE THAT MAKES <br> YOU FEEL AWESOME</h1>
+          <p>
+              Rich in heritage and abundant in local produce. Elegant Eats is a gathering place celebrating every event of yours to make it special for your loved ones.
+          </p></div>
+      </div>
+      
+      </div>
+      <br>
+      
+      <div  style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
+      
+<!-- Container Fluid Section -->
+<div class="container-fluid">
+    <div class="row bg-dark text-white text-center py-3 ">
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+            <i class="bi bi-telephone-fill text-danger fs-4 me-2"></i>
+            <div>
+                <p class="mb-0">+(212) 344-829-4851</p>
+                <p class="text-muted mb-0 text-white" >A small city named Foodie</p>
+            </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+            <i class="bi bi-geo-alt-fill text-danger fs-4 me-2"></i>
+            <div>
+                <p class="mb-0">A46 Delicious Avenue</p>
+                <p class="text-muted mb-0 text-white">Foodie City, FL 12345</p>
+            </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+            <i class="bi bi-clock text-danger fs-4 me-2"></i>
+            <div>
+                <p class="mb-0">Open Monday - Sunday</p>
+                <p class="text-muted mb-0 text-white">2:00 PM - 1:20 AM</p>
+            </div>
+        </div>
+    </div>
+    <div class="row base">
+      <div class="col-lg-6 mt-3">
+     <img src="images/bg7.jpeg" class="img-fluid image1 "  alt="">
+      </div>
+      <div class="col-lg-6 base text-white">
+       <h1 class="text-center  mt-5 text">
+        WELCOME TO 
+        <span class="text-danger head">ELEGANT EATS</span> <br>RESTAURANT
+       </h1>
+       <p class="text-align-center lh-lg mt-3  ">
+        ELEGANT EATS RESTAURANT  is the family own business blending the cultures of Argentina , Armenia , and Italy.Bringing you a delicious menu in our beautiful gathering space.Our Restaurant is a neighborhood place to stop by at the heart of foodie city.We don't just make food.We make people's experience.Elegant Eats was built on the belief that food should be special,and we carry that belief into everything we do. Elegant Eats Restaurant offer's our signature dishes but also present special that are created with local ingredients and produce in minds in the hopes of transforming the sharing experience while captivating the diner's imagination.
+       </p>
+      </div>
+    </div>
+    <div class="row mt-5 justify-content-center">
+     <div class="col-lg-4 ">
+      <img src="images/bg10.webp" class=" img-fluid rounded w-100 image2 "  alt="">
+      <div class="text">
+        <h3 class=" mt-3">DELICIOUS FOOD</h3>
+        <p style="color: rgb(128, 128, 128);">Good Food Is The Foundation Of Genuine Happiness</p>
+       <a href="burgers.html" style="text-decoration: none;"><p class="fs-5 " style="color: rgb(128, 128, 128); ">View Our Menu   <i class="bi bi-arrow-right mx-3 fs-4 text-dark"></i></p> </a>
+      </div>
+     </div>
+     <div class="col-lg-4 ">
+      <img src="images/bg11.webp" class=" img-fluid rounded w-100 image3  " alt="">
+      <div class="text">
+        <h3 class=" mt-3">DRINKS YOU LOVE</h3>
+        <p style="color: rgb(128, 128, 128);">You Will Find The Best Drinks In Our Restaurant</p>
+       <a href="burgers.html" style="text-decoration: none;"> <p class="fs-5" style="color: rgb(128, 128, 128); ">View Our Drinks  <i class="bi bi-arrow-right mx-3 fs-4 text-dark"></i></p> </a>
+      </div>
+     </div>
+    </div>
+  <div class="row">
+  <div class="discover col-lg-12">
+    <h1 class="text-danger ">
+      Discover
+    </h1>
+    <h2>ELEGANT EATS</h2>
+  </div>
+  </div>
+  <section id="gallery">
+  <div class="section-heading text-center">
+    <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">OUR GALLERY</h2>
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">OUR UNTOLD STORY</h1>
+  </div>
+  
+  <div class="gallery-wrapper text-center mt-4">
+    <a class="gallery-img" href="images/burgers/classic chicken burger.webp">
+      <img src="images/burgers/classic chicken burger.webp" class="img-fluid" alt="Classic Chicken Burger">
+      <div class="overlay">
+        <i class="icon bi bi-search"></i>
+      </div>
+    </a>
+  
+    <a class="gallery-img" href="images/pasta/parmesan chicken pasta.webp">
+      <img src="images/pasta/parmesan chicken pasta.webp" class="img-fluid " alt="Classic Chicken Burger">
+      <div class="overlay">
+        <i class="icon bi bi-search"></i>
+      </div>
+    </a>
+  
+    <a class="gallery-img" href="images/chinese/c.chowmein.webp">
+      <img src="images/chinese/c.chowmein.webp" class="img-fluid " alt="Classic Chicken Burger">
+      <div class="overlay">
+        <i class="icon bi bi-search"></i>
+      </div>
+    </a>
+  
+    <a class="gallery-img" href="images/ice cream/chcolate ice cream.jpg">
+      <img src="images/ice cream/chcolate ice cream.jpg" class="img-fluid " alt="Classic Chicken Burger">
+      <div class="overlay">
+        <i class="icon bi bi-search"></i>
+      </div>
+    </a>
+  
+    <a class="gallery-img" href="images/burgers/classic chicken burger.webp">
+      <img src="images/sandwiches/club sandwich.webp" class="img-fluid " alt="Classic Chicken Burger">
+      <div class="overlay">
+        <i class="icon bi bi-search"></i>
+      </div>
+    </a>
+  
+    <a class="gallery-img" href="images/cake and brownie/choc with brownie.jpg">
+      <img src="images/cake and brownie/choc with brownie.jpg" class="img-fluid " alt="Classic Chicken Burger">
+      <div class="overlay">
+        <i class="icon bi bi-search"></i>
+      </div>
+    </a>
+  
+    <a class="gallery-img" href="images/cocktails/mint lemonade.webp">
+      <img src="images/cocktails/mint lemonade.webp" class="img-fluid " alt="Classic Chicken Burger">
+      <div class="overlay">
+        <i class="icon bi bi-search"></i>
+      </div>
+    </a>
+  
+    <a class="gallery-img" href="images/starters/chicken balls ginsoy.webp">
+      <img src="images/starters/chicken balls ginsoy.webp" class="img-fluid " alt="Classic Chicken Burger">
+      <div class="overlay">
+        <i class="icon bi bi-search"></i>
+      </div>
+    </a>
+  
+    <a class="gallery-img" href="images/chinese/chilli chicken garvy.webp">
+      <img src="images/chinese/chilli chicken garvy.webp" class="img-fluid " alt="Classic Chicken Burger">
+      <div class="overlay">
+        <i class="icon bi bi-search"></i>
+      </div>
+    </a>
+    </div>
+   </section>
+    <div class="row  name justify-content-center">
+      <div class="col-lg-12 text-center mt-5 text-white  ">
+         <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;" class="service">OUR SERVICES</h1>
+         <p class="mt-3 fs-5 service1">WE WILL TRY TO PROVIDE YOU THE BEST SERVICE AS POSSIBLE.</p>
+      </div>
+      <div class="col-lg-3  rounded text-center m-3 card">
+        <i class="bi bi-cake display-3 "></i>
+       <a href="event.html " style="text-decoration: none;"> <h3 style="color: black ;" >Birthday <br> Party</h3></a>
+        <p > 
+          <b>In our restaurant you can easily arrange your birthday parties .</b>
+        </p>
+      </div>
+      <div class="col-lg-3  rounded m-3 text-center card" >
+        <i class="bi bi-person-lock  display-3 "></i>
+       <a href="event.html" style="text-decoration: none;"> <h3 style="color: black;">Personal <br> Meetings</h3></a>
+      <b><p> Our private dinning room offers an ultimate space for upto 10 guests with view of central park.</p></b> 
+      </div>
+      <div class="col-lg-3  rounded text-center m-3  card ">
+     <i class="bi bi-balloon-heart display-3"></i>
+      <a href="event.html" style="text-decoration: none;"><h3 style="color: black; ">Wedding <br> Party</h3></a>
+      <p>
+        <b>You can arrange your small events like wedding or reception with  limited guests.</b>
+      </p>
+      </div>
+  
+  
+      <section class="section_container client_container bg-dark py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Client Image -->
+            <div class="col-lg-6 mb-4 mb-lg-0 client_image">
+              <img src="images/review.avif" class="img-fluid" alt="Customer Review Image">
+            </div>
+      
+            <!-- Client Content -->
+            <div class="col-lg-6 text-white">
+              <p class="section_subheader text-danger fs-4" style="font-family: 'Times New Roman', Times, serif;">
+                WHAT THEY SAY
+              </p>
+              <h1 class="section_header text-white " style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                What Our Customers Say About Us
+              </h2>
+              <p class="section_description mt-4">
+                EER is simply outstanding! The variety and deliciousness of their meals are unparalleled, offering something for every palate. The delivery is impressively fast, ensuring your food arrives hot and fresh.
+              </p>
+              <div class="client_details d-flex align-items-center mb-4">
+                <img src="images/girl review.jpg" class="img-fluid rounded-circle me-3" alt="Sarah Singh">
+                <div>
+                  <h4 class="text-white">Sarah Singh</h4>
+                  <h5>Food Enthusiast</h5>
+                </div>
+              </div>
+              <div class="client-rating d-flex align-items-center ">
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star-fill"></i></span>
+                <span><i class="bi bi-star"></i></span>
+                <span class="text-white">4.9</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+  
+      <footer class="bg-light text-white py-4 border border">
+        <div class="container">
+          <div class="row text-dark">
+            <div class="col-12 col-md-4 mb-4 mb-md-0 text-center text-md-start">
+              <img src="images/logo.gif" class="img-fluid" style="width: 200px; max-width: 100%;" alt="Elegant Eats Logo">
+            </div>
+            <div class="col-12 col-md-4 mb-4 mb-md-0 text-center text-md-start">
+              <h2 class="text-danger" style="font-family: 'Times New Roman', Times, serif;">Contact Us</h2>
+              <p><i class="bi bi-geo-alt-fill"></i> ABC Street, New York, NY 535022</p>
+              <p><i class="bi bi-telephone-fill"></i> (212) 344-8294851</p>
+              <p><i class="bi bi-envelope-fill"></i> <a href="mailto:eleganteats.com" style ="text-decoration: none;" class="text-dark">eleganteats.com</a></p>
+            </div>
+            <div class="col-12 col-md-4 text-center text-md-start">
+              <h2 class="text-danger" style="font-family: 'Times New Roman', Times, serif;">About The Restaurant</h2>
+              <p>The Elegant Eats offers fast food and Chinese cuisine at ABC Street, New York, NY 535022. Contact us at <a href="mailto:eleganteats.com" style ="text-decoration: none;" class="text-dark">eleganteats.com</a> or (212) 344-8294851. Follow us on Facebook and Instagram.</p>
+            </div>
+          </div>
+          <hr class="my-4" style="border-color: rgba(16, 15, 15, 0.3);">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h6 class="text-dark">&copy; 2024 All rights reserved. <a href="mailto:eleganteats.com" style="text-decoration: none;" class="text-danger">eleganteats.com</a></h6>
+            </div>
+          </div>
+        </div>
+      </footer>
+</div>
+
+<!-- Your other content follows here -->
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/dist/js/lightgallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/dist/js/plugins/lg-thumbnail.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/dist/js/plugins/lg-fullscreen.min.js"></script>
+<script>
+  lightGallery(document.querySelector('#gallery'), {
+    thumbnail: true,
+    download: false
+  });
+
+  
+
+</script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+<script src="scroll.js"></script>
+  
+</body>
+</html>
